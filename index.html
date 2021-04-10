@@ -18,18 +18,17 @@
                 <h2>This media is accessible for everyone!</h2>
                 <div id="video-player">
                         <video src="media/steamed_hams.mp4"></video>
-                        <!-- <video src="media/bobcaygeon.mp3"></video> -->
+                        <!-- <audio id="audio" src="media/bobcaygeon.mp3"></audio> -->
                         <!-- <video src="media/boston.mp4"></video> -->
                     <div class="controls">
                         <button id="playPause">Play</button>
-                        <input type="range" min="1" max="100" value="1" class="slider" id="duration">
-                    <div>
+                        <label for="duration">Duration:</label>
+                        <input type="range" min="0" max="100" value="1" class="slider" id="duration">
                         <label for="volume">Volume:</label>
-                        <input type="range" min="1" max="100" value="100" class="slider slider-volume" id="volume">
+                        <input type="range" min="0" max="100" value="100" class="slider slider-volume" id="volume">
                     </div>
-                    <button id="fullscreen">[fullscreen]</button>
                 </div>
-            </div>
+        </div>
     </main>
 </body>
 <script src="js/main.js"></script>
