@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <h1>Let's make it accessible!</h1>
+            <header>
+                <h2 class="hidden">Hello!</h2>
+            </header>
+            <section>
+                <h2>This media is accessible for everyone!</h2>
+                <div id="video-player">
+                        <video src="media/steamed_hams.mp4"></video>
+                        <!-- <video src="media/bobcaygeon.mp3"></video> -->
+                        <!-- <video src="media/boston.mp4"></video> -->
+                    <div class="controls">
+                        <button id="playPause">Play</button>
+                        <input type="range" min="1" max="100" value="1" class="slider" id="duration">
+                    <div>
+                        <label for="volume">Volume:</label>
+                        <input type="range" min="1" max="100" value="100" class="slider slider-volume" id="volume">
+                    </div>
+                    <button id="fullscreen">[fullscreen]</button>
+                </div>
+            </div>
+    </main>
+</body>
+<script src="js/main.js"></script>
+</html>
