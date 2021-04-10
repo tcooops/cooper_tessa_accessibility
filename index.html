@@ -21,11 +21,17 @@
                         <!-- <audio id="audio" src="media/bobcaygeon.mp3"></audio> -->
                         <!-- <video src="media/boston.mp4"></video> -->
                     <div class="controls">
-                        <button id="playPause">Play</button>
-                        <label for="duration">Duration:</label>
-                        <input type="range" min="0" max="100" value="1" class="slider" id="duration">
-                        <label for="volume">Volume:</label>
-                        <input type="range" min="0" max="100" value="100" class="slider slider-volume" id="volume">
+                        <div id="top-ctrl">
+                            <button id="playPause">Play</button>
+                            <div class="volume-con">
+                               <label for="volume">Volume:</label>
+                                <input type="range" min="0" max="100" value="100" class="slider slider-volume" id="volume">
+                            </div>
+                        </div>
+                        <div class="duration-con">
+                            <label for="duration">Duration:</label>
+                            <input type="range" min="0" max="100" value="1" class="slider" id="duration">
+                        </div>
                     </div>
                 </div>
         </div>
