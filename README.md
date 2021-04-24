@@ -1,7 +1,7 @@
 # Accessibility Research Project
 
 ## Description
-* Learning how to make video and audio accessible for all! Find the roadmap [here](https://docs.google.com/document/d/1n2M2H2jW4BRPGCJaxDDpfboArRCXm5nTk_90oKiCRuc/edit?usp=sharing){:target="_blank"}
+* Learning how to make video and audio accessible for all! Find the roadmap [here](media/roadmap.pdf) 
 
 ## Requirements
 * Use a modern browser such as Google Chrome.
