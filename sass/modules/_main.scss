@@ -82,6 +82,21 @@ h1,h2 {
                 -ms-border-radius: 5px;
                 -o-border-radius: 5px;
                 } 
+              #subtitles {
+                cursor: pointer;
+                width: 80px;
+                height: 40px;
+                border: none;
+                font-size: 0.8em;
+                background-color: $teal;
+                color: #f2f2f2;
+                font-weight: 500;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+              }
             #volume-con {
                 display: flex;
                 flex-direction: row;
@@ -115,6 +130,8 @@ h1,h2 {
   width: 100%;
   color: $teal;
 }
+
+
 
 // fixing range 
 

@@ -10,26 +10,42 @@
 <body>
     <main>
         <div class="main-container">
-            <h1>Let's make it accessible!</h1>
-            <header>
-                <h2 class="hidden">Hello!</h2>
-            </header>
+            <h1 class="hidden">Let's make it accessible!</h1>
             <section>
                 <h2>This media is accessible for everyone!</h2>
                 <div id="video-player">
-                        <video src="media/mando.mp4" title="mando"></video>
-                        <!--  <video src="media/bladerunner.mp4" title="bladerunner"></video> -->
-                        <!-- <video id="audio" src="media/bobcaygeon.mp3" title="bobcaygeon">Audio Only</video> -->
+                    <!--
+                        <video title="mando">
+                            <source src="media/mando.mp4" type="video/mp4>
+                            <source src="media/mando.webm" type="video/webm>
+                            <sourcesrc="media/mando.ogg" type="video/ogg">
+                            <track default src="media/mando.vtt">
+                        </video>
+                    -->
+                    
+                        <video title="bladerunner">
+                            <source src="media/bladerunner.mp4" type="video/mp4">
+                            <source src="media/bladerunner.webm" type="video/webm">
+                            <source src="media/bladerunner.ogg" type="video/ogg">
+                            <track class="hidden" default src="media/bladerunner.vtt">
+                        </video> 
+                    
+                    
+                    <!--
+                        <p>Audio Only</p>
+                        <video id="audio" src="media/bobcaygeon.mp3" title="bobcaygeon">
+                             <track default src="media/bobcaygeon.vtt">
+                        </video> 
+                    -->
                     <div class="controls">
                         <div id="top-ctrl">
                             <button id="playPause">Play</button>
-                            <div class="volume-con">
-                               <label for="volume">Volume:</label>
-                                <input type="range" min="0" max="100" value="100" class="slider slider-volume" id="volume">
-                            </div>
-                            <button id="caption">Show Caption</button>
+                            <button id="caption">Show Full Transcript</button>
                             <button id="fullscreen">Fullscreen</button>
-
+                            <div class="volume-con">
+                                <label for="volume">Volume:</label>
+                                 <input type="range" min="0" max="100" value="100" class="slider slider-volume" id="volume">
+                             </div>
                         </div>
                         <div class="duration-con">
                             <label for="duration">Duration:</label>
@@ -38,7 +54,7 @@
                     </div>
                     
                     <div id="captionShow">
-                        <h2 class="hidden">Caption:</h2>
+                        <h2 class="hidden">Transcript:</h2>
                         <p class="captions"></p>
                       </div>
                 </div>

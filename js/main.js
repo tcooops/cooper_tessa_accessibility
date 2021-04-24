@@ -10,6 +10,8 @@ const fullscreen = document.querySelector('#fullscreen');
 
 const video = document.querySelector('video');
 
+const subtitles = document.querySelector('#subtitles');
+
 const videoplayer = document.querySelector('#video-player');
 
 if (video.src.includes('.mp3') || video.src.includes('.wav')) {
@@ -23,10 +25,10 @@ playPause.addEventListener('click', playPauseHandler);
 function playPauseHandler() {
   if (video.paused) {
     video.play();
-    playPause.textContent = "PAUSE";
+    playPause.textContent = "Pause";
   }  else {
     video.pause();
-    playPause.textContent = "PLAY";
+    playPause.textContent = "Play";
   }
 }
 
@@ -61,7 +63,6 @@ function fullscreenHandler() {
       document.webkitExitFullscreen();
     }
   }
-
 }
 
 function loopDurationUpdate() {
@@ -106,6 +107,8 @@ const captions = {
   
   I want to ask you some questions.
   
+  The key to the future is finally unearthed.
+
   They know you're here. 
 
   I always told you... you're special
