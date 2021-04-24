@@ -17,9 +17,9 @@
             <section>
                 <h2>This media is accessible for everyone!</h2>
                 <div id="video-player">
-                        <video src="media/steamed_hams.mp4"></video>
-                        <!-- <audio id="audio" src="media/bobcaygeon.mp3"></audio> -->
-                        <!-- <video src="media/boston.mp4"></video> -->
+                        <video src="media/mando.mp4" title="mando"></video>
+                        <!--  <video src="media/bladerunner.mp4" title="bladerunner"></video> -->
+                        <!-- <audio id="audio" src="media/bobcaygeon.mp3" title="bobcaygeon"></audio> -->
                     <div class="controls">
                         <div id="top-ctrl">
                             <button id="playPause">Play</button>
@@ -27,12 +27,20 @@
                                <label for="volume">Volume:</label>
                                 <input type="range" min="0" max="100" value="100" class="slider slider-volume" id="volume">
                             </div>
+                            <button id="caption">Show Caption</button>
+                            <button id="fullscreen">Fullscreen</button>
+
                         </div>
                         <div class="duration-con">
                             <label for="duration">Duration:</label>
                             <input type="range" min="0" max="100" value="1" class="slider" id="duration">
                         </div>
                     </div>
+                    
+                    <div id="captionShow">
+                        <h2 class="hidden">Caption:</h2>
+                        <p></p>
+                      </div>
                 </div>
         </div>
     </main>

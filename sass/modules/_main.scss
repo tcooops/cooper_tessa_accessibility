@@ -4,6 +4,7 @@
 
 body {
     background-color: #f2f2f2;
+    font-family: $main-font;
 }
 
 .main-container {
@@ -18,25 +19,26 @@ h1,h2 {
 }
 
 #video-player {
+  width: 100%;
     text-align: center;
     margin: 0 auto;
     video { 
-        max-width: 720px!important;
+        max-width: 1080px!important;
         cursor: pointer;
     }
     .controls {
         margin: 0 auto;
         display:flex;
         flex-direction: column;
-        max-width: 720px;
+        max-width: 1080px;
         #top-ctrl {
-            width: 720px;
+            width: 1080px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             label { font-family: Helvetica, Arial, sans-serif;
             font-size: 0.8em;}
-            #playPause {
+            #playPause{
                 cursor: pointer;
                 width: 80px;
                 height: 40px;
@@ -51,6 +53,35 @@ h1,h2 {
                 -ms-border-radius: 5px;
                 -o-border-radius: 5px;
             }
+            #fullscreen {
+                cursor: pointer;
+                width: 100px;
+                height: 40px;
+                border: none;
+                font-size: 0.8em;
+                background-color: $teal;
+                color: #f2f2f2;
+                font-weight: 500;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px; }
+              #caption {
+                cursor: pointer;
+                width: 130px;
+                height: 40px;
+                border: none;
+                font-size: 0.8em;
+                background-color: $teal;
+                color: #f2f2f2;
+                font-weight: 500;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                } 
             #volume-con {
                 display: flex;
                 flex-direction: row;
@@ -61,6 +92,7 @@ h1,h2 {
             }
         }
         .duration-con {
+            margin-bottom: 2em;
             margin-top: 2em;
             display:flex;
             flex-direction: column;
@@ -72,6 +104,13 @@ h1,h2 {
         }
     }
 }
+
+// hide at default. Will appear when clicked.
+
+#captionShow {
+  display: none;
+}
+
 
 // fixing range 
 
@@ -181,4 +220,14 @@ input[type=range] {
   }
   input[type=range]:focus::-ms-fill-upper {
     background: #036c6d;
+  }
+
+
+  #audio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: none;
   }
